@@ -13,8 +13,8 @@ image.onload = function() {
     procCanvas.height = image.height/divisor;
     ctx.drawImage(image, 0, 0, imageCanvas.width, imageCanvas.height);
 };
-image.src = "./bird.jpg";
-formImg.src = "./bird.jpg"
+image.src = "/gradient-kit/bird.jpg";
+formImg.src = "/gradient-kit/bird.jpg"
 let defaultSet = true;
 
 document.getElementById('save').addEventListener("click", function(e) {
@@ -536,7 +536,7 @@ canvas1.addEventListener("mousemove", (e) => {
     // }
     if(draggingPoint) { //&& mousedownID
 
-        mousedownID = setInterval(handleDrag(e), 20 /*execute every 40ms*/);
+        mousedownID = setInterval(handleDrag(e), 20);
     }
 
     gDebug.debug(mousePos.x,redLine.points,greenLine.points,blueLine.points, false);
